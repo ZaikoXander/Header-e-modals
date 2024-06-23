@@ -1,24 +1,10 @@
-import { useEffect, useState } from 'react';
-
 import { X, School } from 'lucide-react';
 
 const IntroductionModal = ({ description, onClose }) => {
-  const [showModal, setShowModal] = useState(true);
-
-  useEffect(() => {
-    const modalShown = localStorage.getItem('modalShown');
-    if (modalShown) {
-      setShowModal(false);
-    }
-  }, []);
-
   const handleClose = () => {
-    setShowModal(false);
     localStorage.setItem('modalShown', 'true');
     onClose();
   };
-
-  if (!showModal) return
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">

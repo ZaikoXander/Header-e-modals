@@ -1,24 +1,10 @@
-import { useEffect, useState } from 'react';
-
 import { X, CircleHelp } from 'lucide-react';
 
 const SecondIntroductionModal = ({ onClose }) => {
-  const [showModal, setShowModal] = useState(true);
-
-  useEffect(() => {
-    const modalTwoShown = localStorage.getItem('modalTwoShown');
-    if (modalTwoShown) {
-      setShowModal(false);
-    }
-  }, []);
-
   const handleClose = () => {
-    setShowModal(false);
     localStorage.setItem('modalTwoShown', 'true');
     onClose();
   };
-
-  if (!showModal) return;
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import Header from './components/Header';
 
@@ -7,7 +7,7 @@ import SecondIntroductionModal from './components/SecondIntroductionModal';
 
 function App() {
   const [showFirstIntroductionModal,
-         setShowFirstIntroductionModal] = useState(true);
+         setShowFirstIntroductionModal] = useState(false);
   const [showSecondIntroductionModal,
          setShowSecondIntroductionModal] = useState(false);
 
@@ -19,6 +19,21 @@ function App() {
   const handleCloseSecondIntroductionModal = () => {
     setShowSecondIntroductionModal(false);
   };
+
+  useEffect(() => {
+    const firstIntroductionModalShown = localStorage.getItem('modalShown');
+
+    if (!firstIntroductionModalShown) {
+      setShowFirstIntroductionModal(true);
+      return
+    }
+
+    const secondIntroductionModalShown = localStorage.getItem('modalTwoShown');
+
+    if (!secondIntroductionModalShown) {
+      setShowSecondIntroductionModal(true);
+    }
+  }, []);
 
   return (
     <div className="App">
