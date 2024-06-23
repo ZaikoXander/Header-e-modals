@@ -21,16 +21,16 @@ function App() {
   };
 
   useEffect(() => {
-    const firstIntroductionModalShown = localStorage.getItem('modalShown');
+    const firstIntroductionModalShown = localStorage.getItem('firstIntroductionModalShown');
 
-    if (!firstIntroductionModalShown) {
+    if (!(firstIntroductionModalShown === 'true')) {
       setShowFirstIntroductionModal(true);
       return
     }
 
-    const secondIntroductionModalShown = localStorage.getItem('modalTwoShown');
+    const secondIntroductionModalShown = localStorage.getItem('secondIntroductionModalShown');
 
-    if (!secondIntroductionModalShown) {
+    if (!(secondIntroductionModalShown === 'true')) {
       setShowSecondIntroductionModal(true);
     }
   }, []);

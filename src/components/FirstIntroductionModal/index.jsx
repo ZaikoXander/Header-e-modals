@@ -2,7 +2,7 @@ import { X, School } from 'lucide-react';
 
 const FirstIntroductionModal = ({ description, onClose }) => {
   const handleClose = () => {
-    localStorage.setItem('modalShown', 'true');
+    localStorage.setItem('firstIntroductionModalShown', 'true');
     onClose();
   };
 

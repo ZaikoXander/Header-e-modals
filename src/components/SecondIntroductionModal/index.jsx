@@ -2,7 +2,7 @@ import { X, CircleHelp } from 'lucide-react';
 
 const SecondIntroductionModal = ({ onClose }) => {
   const handleClose = () => {
-    localStorage.setItem('modalTwoShown', 'true');
+    localStorage.setItem('secondIntroductionModalShown', 'true');
     onClose();
   };
 
