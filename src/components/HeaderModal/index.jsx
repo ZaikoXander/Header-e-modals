@@ -1,7 +1,6 @@
-import React from 'react';
 import { X, CircleHelp } from 'lucide-react'; // Importando os ícones do Lucide React
 
-const ThirdModal = ({ onClose }) => {
+const HeaderModal = ({ onClose }) => {
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
       <div className="bg-white p-8 rounded shadow-lg max-w-sm w-full relative">
@@ -9,7 +8,7 @@ const ThirdModal = ({ onClose }) => {
           onClick={onClose}
           className="absolute top-0 right-0 m-2 text-gray-500 hover:text-gray-700"
         >
-          <X size={24} /> {/* Ícone para fechar o modal */}
+          <X size={24} />
         </button>
         <div className="flex items-center mb-4">
           <CircleHelp size={24} className="mr-2 text-blue-500" /> {/* Ícone de escola ao lado do título */}
@@ -21,4 +20,4 @@ const ThirdModal = ({ onClose }) => {
   );
 };
 
-export default ThirdModal;
+export default HeaderModal;
