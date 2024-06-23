@@ -20,7 +20,7 @@ const SecondIntroductionModal = ({ onClose }) => {
           <h2 className="text-xl font-bold">Como utilizar?</h2>
         </div>
         <p>
-          Para utilizar nosso site é simples, basta escolher uma das instituições Fatec em nosso mapa, e então será exibida sua seção de informações, cursos e comentários.
+          Para utilizar nosso site é simples, basta escolher uma das instituições Fatec em nosso mapa ou procurar através da barra de pesquisa, e então será exibida sua seção de informações, cursos e comentários.
         </p>
       </div>
     </div>
