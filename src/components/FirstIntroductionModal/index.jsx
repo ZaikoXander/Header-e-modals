@@ -1,6 +1,6 @@
 import { X, School } from 'lucide-react';
 
-const IntroductionModal = ({ description, onClose }) => {
+const FirstIntroductionModal = ({ description, onClose }) => {
   const handleClose = () => {
     localStorage.setItem('modalShown', 'true');
     onClose();
@@ -27,4 +27,4 @@ const IntroductionModal = ({ description, onClose }) => {
   );
 };
 
-export default IntroductionModal;
+export default FirstIntroductionModal;
