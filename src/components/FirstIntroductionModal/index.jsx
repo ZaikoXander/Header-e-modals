@@ -34,7 +34,7 @@ const IntroductionModal = ({ description, onClose }) => {
           <h2 className="text-xl font-bold">Olá, seja bem vindo</h2>
         </div>
         <p>
-          Seja bem vindo ao Sua Fatec, Um lugar para que você possa encontrar informações precisas e opiniões sobre as instituições fatec do estado de São Paulo
+          Seja bem vindo ao Sua Fatec, um lugar para que você possa encontrar informações precisas e opiniões sobre as instituições Fatec do estado de São Paulo.
         </p>
       </div>
     </div>

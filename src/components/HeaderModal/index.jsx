@@ -14,7 +14,7 @@ const HeaderModal = ({ onClose }) => {
           <CircleHelp size={24} className="mr-2 text-blue-500" /> {/* Ícone de escola ao lado do título */}
           <h2 className="text-xl font-bold text-gray-900">Como usar</h2>
         </div>
-        <p className="text-gray-700">Para utilzar nosso site é simples, basta escolher uma das instituiçoes Fatec em nosso mapa, e então exibira sua sessão de informações, de curso e comentarios.</p>
+        <p className="text-gray-700">Para utilizar nosso site é simples, basta escolher uma das instituições Fatec em nosso mapa, e então exibira sua sessão de informações, de curso e comentários.</p>
       </div>
     </div>
   );
